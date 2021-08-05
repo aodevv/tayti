@@ -98,6 +98,11 @@ body {
   cursor: pointer;
 }
 
+.header--container {
+  width: 100%;
+  overflow: auto;
+}
+
 .header--container .laptop--woman {
   width: 80%;
   position: absolute;
@@ -155,5 +160,88 @@ body {
 
 .header--container .header--content .header--btn__groupe .CTA:first-child {
   margin-right: 10px;
+}
+
+.header--container .services--container {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  position: absolute;
+  top: 100%;
+  padding: 0 90px;
+  z-index: 2;
+}
+
+.header--container .services--container .service--wrapper {
+  width: 260px;
+  height: 280px;
+  background-color: white;
+  border-radius: 0 50px 50px 50px;
+  -webkit-box-shadow: 4px 4px 30px -1px rgba(0, 0, 0, 0.1);
+          box-shadow: 4px 4px 30px -1px rgba(0, 0, 0, 0.1);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: 300ms;
+  transition: 300ms;
+}
+
+.header--container .services--container .service--wrapper .service--icon__wrapper {
+  width: 70px;
+  height: 70px;
+  background-color: #eff2f7;
+  border-radius: 0 50px 50px 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 30px 0;
+  -webkit-transition: 300ms;
+  transition: 300ms;
+}
+
+.header--container .services--container .service--wrapper .service--icon__wrapper i {
+  color: #0c5adb;
+  font-size: 25px;
+}
+
+.header--container .services--container .service--wrapper .service--description {
+  text-align: center;
+}
+
+.header--container .services--container .service--wrapper .service--description h2 {
+  margin-bottom: 20px;
+}
+
+.header--container .services--container .service--wrapper .service--description span {
+  line-height: 1.6;
+}
+
+.header--container .services--container .service--wrapper:hover {
+  -webkit-transform: translateY(-10px);
+          transform: translateY(-10px);
+  background-color: #0c5adb;
+  color: white;
+  -webkit-box-shadow: 0;
+          box-shadow: 0;
+}
+
+.header--container .services--container .service--wrapper:hover .service--icon__wrapper {
+  background-color: white;
 }
 /*# sourceMappingURL=style.css.map */
