@@ -22,5 +22,4 @@ window.addEventListener('scroll', function(){
     else {
         add_class_on_scroll();
     }
-    console.log(scrollpos);
 });
