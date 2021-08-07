@@ -110,15 +110,17 @@ body {
   width: 100%;
   height: 800px;
   padding: 0 400px;
+  overflow: hidden;
 }
 
 .header--container .laptop--woman {
-  height: 800px;
+  width: 100%;
   position: absolute;
   right: 0;
   background-position: top right;
   background-repeat: no-repeat;
   background-size: cover;
+  background-attachment: scroll;
   z-index: -1;
 }
 
@@ -162,6 +164,8 @@ body {
 
 .features {
   width: 100%;
+  z-index: 1;
+  position: relative;
 }
 
 .features .services--container {
@@ -180,8 +184,8 @@ body {
   height: 280px;
   background-color: white;
   border-radius: 0 50px 50px 50px;
-  -webkit-box-shadow: 4px 4px 30px -1px rgba(0, 0, 0, 0.1);
-          box-shadow: 4px 4px 30px -1px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 0 10px 29.7px 0.3px rgba(225, 225, 225, 0.64);
+          box-shadow: 0 10px 29.7px 0.3px rgba(225, 225, 225, 0.64);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
