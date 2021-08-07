@@ -3,7 +3,7 @@
   padding: 0;
   box-sizing: border-box;
 }
-html{
+html {
   height: 100%;
   width: 100%;
   min-height: 100vh;
@@ -32,7 +32,7 @@ body {
   display: flex;
   position: fixed;
   right: 50%;
-  margin-right:-550px;
+  margin-right: -550px;
   width: 1100px;
   //overflow: hidden;
   justify-content: space-between;
@@ -103,7 +103,7 @@ body {
     z-index: -1;
   }
 
-  .header--content__wrapper{
+  .header--content__wrapper {
     position: absolute;
     top: 220px;
     right: 50%;
@@ -112,36 +112,36 @@ body {
     margin-right: -550px;
     z-index: 2;
     .header--content {
-    width: 60%;
+      width: 60%;
 
-    .header--title {
-      font-size: 65px;
-      font-weight: 900;
-    }
+      .header--title {
+        font-size: 65px;
+        font-weight: 900;
+      }
 
-    p {
-      margin: 20px 0;
-      font-size: 18px;
-      line-height: 1.5;
-      width: 90%;
-    }
+      p {
+        margin: 20px 0;
+        font-size: 18px;
+        line-height: 1.5;
+        width: 90%;
+      }
 
-    .header--btn__groupe {
-      padding-top: 10px;
-      .CTA {
-        font-size: 1rem;
-        padding: 18px 45px;
+      .header--btn__groupe {
+        padding-top: 10px;
+        .CTA {
+          font-size: 1rem;
+          padding: 18px 45px;
 
-        &:first-child {
-          margin-right: 10px;
+          &:first-child {
+            margin-right: 10px;
+          }
         }
       }
     }
   }
-  }
 }
 
-.features{
+.features {
   width: 100%;
   //height: 305px;
   .services--container {
@@ -193,6 +193,10 @@ body {
       &:hover {
         transform: translateY(-10px);
         background-color: #0c5adb;
+        background-image: url(what-we-are-dot.png);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
         color: white;
         box-shadow: 0;
 
@@ -202,133 +206,127 @@ body {
       }
     }
   }
-  .clear{
+  .clear {
     height: 110px;
   }
 }
 
-.services{
+.services {
   width: 100%;
   height: auto;
   //background: #EFF2F7;
   padding: 100px 0;
-  
-  
-  .services--container{
+
+  .services--container {
     max-width: 1100px;
-  display: flex;
-  justify-content: space-between;
-  margin: auto;
-  display: flex;
-  align-items: center;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    display: flex;
+    align-items: center;
 
+    .services--container__left {
+      width: 58%;
 
-  .services--container__left{
-    width: 58%;
+      h2 {
+        font-size: 42px;
+        font-weight: 700;
+      }
 
-    
+      p {
+        color: rgb(97, 97, 97);
+        font-size: 19px;
+        line-height: 1.5;
+      }
 
-    h2{
-      font-size: 42px;
-      font-weight: 700;
-    }
-
-    p{
-      color: rgb(97,97,97);
-      font-size: 19px;
-      line-height: 1.5;
-    }
-
-
-    .services--content__container{
-      margin: 30px 0;
-      display: flex;
-      .services__content{
-        &:first-child{
-          margin-right: 30px;
-        }
-
-        .service{
-          position: relative;
-          width: 300px;
-          height: 57px;
-          background-color: white;
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          border-radius: 0 30px 30px 30px;
-          transition: 0.5s;
-          box-shadow: 0 10px 29.7px 0.3px rgba(221, 221, 221, 0.651);
-          margin-bottom: 20px;
-
-          &:hover{
-            background-color: #0c5adb;
-            color: white;
+      .services--content__container {
+        margin: 30px 0;
+        display: flex;
+        .services__content {
+          &:first-child {
+            margin-right: 30px;
           }
 
-          .service--icon{
-            position: absolute;
-            top: 50%;
-            transform: translateY(-50%);
-            background-color: #0c5adb;
-            color: white;
-            width: 56px;
-            height: 56px;
-            left: 0;
+          .service {
+            position: relative;
+            width: 300px;
+            height: 57px;
+            background-color: white;
             display: flex;
-            justify-content: center;
             align-items: center;
-            border-radius: 0 30px 30px;
-            font-size: 18px;
-          }
+            justify-content: center;
+            border-radius: 0 30px 30px 30px;
+            transition: 0.5s;
+            box-shadow: 0 10px 29.7px 0.3px rgba(221, 221, 221, 0.651);
+            margin-bottom: 20px;
 
-          .service--title{
-            font-size: 18px;
+            &:hover {
+              background-color: #0c5adb;
+              color: white;
+            }
+
+            .service--icon {
+              position: absolute;
+              top: 50%;
+              transform: translateY(-50%);
+              background-color: #0c5adb;
+              color: white;
+              width: 56px;
+              height: 56px;
+              left: 0;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              border-radius: 0 30px 30px;
+              font-size: 18px;
+            }
+
+            .service--title {
+              font-size: 18px;
+            }
           }
         }
       }
     }
-  }
 
-  .services--container__right{
-    position: relative;
+    .services--container__right {
+      position: relative;
 
+      .fixed--image {
+        //position: absolute;
+      }
 
-    .fixed--image{
-      //position: absolute;
+      .rotating-dots {
+        position: absolute;
+        top: -60px;
+        left: -80px;
+        animation: rotating 20s linear infinite;
+      }
     }
-
-    .rotating-dots{
-      position: absolute;
-      top: -60px;
-      left: -80px;
-      animation: rotating 20s linear infinite;
-    }
-  }
-  
   }
 }
 
-.stats{
+.stats {
   padding: 80px 0;
-  background: transparent url('service-bg.jpg') center center/cover no-repeat fixed;
-  .stats--container{
+  background: transparent url("service-bg.jpg") center center/cover no-repeat
+    fixed;
+  .stats--container {
     display: flex;
     width: 1100px;
     margin: auto;
     padding: 0 40px;
 
-    .stat{
+    .stat {
       color: rgba(255, 255, 255, 0.9);
       text-align: center;
       width: 25%;
       border-right: white 1px solid;
 
-      &:last-child{
+      &:last-child {
         border-right: none;
       }
 
-      h1{
+      h1 {
         font-size: 40px;
         font-weight: 700;
       }
@@ -336,16 +334,15 @@ body {
   }
 }
 
-
-.slider{
+.slider {
   width: 80px;
   height: 5px;
-  background-color: #AEC6EF;
+  background-color: #aec6ef;
   border-radius: 10px;
   margin: 20px 0;
   position: relative;
 
-  .slider--ball{
+  .slider--ball {
     position: absolute;
     width: 10px;
     height: 10px;
@@ -357,7 +354,7 @@ body {
   }
 }
 
-.team{
+.team {
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -365,56 +362,60 @@ body {
   padding: 80px 0;
   position: relative;
 
-  .hovering-ring{
+  .hovering-ring {
     width: 270px;
     height: 270px;
     border-radius: 135px;
-    background: rgb(19,45,188);
-    background: linear-gradient(90deg, rgba(19,45,188,1) 0%, rgba(45,117,241,1) 100%);
+    background: rgb(19, 45, 188);
+    background: linear-gradient(
+      90deg,
+      rgba(19, 45, 188, 1) 0%,
+      rgba(45, 117, 241, 1) 100%
+    );
     position: absolute;
     top: 3px;
     right: 50px;
     animation: hover ease-in-out 0s infinite;
-    animation-duration: 2s ;
+    animation-duration: 2s;
 
-    &::after{
+    &::after {
       position: absolute;
       top: 50%;
       left: 50%;
-      transform: translate(-50%,-50%);
+      transform: translate(-50%, -50%);
       width: 155px;
       height: 155px;
       border-radius: 80px;
-      content: '';
+      content: "";
       background-color: white;
     }
   }
 
-  .team--container{
+  .team--container {
     margin: auto;
     //max-width: 1100px;
 
-    .team--description{
+    .team--description {
       display: flex;
       flex-direction: column;
       align-items: center;
 
-      h5{
+      h5 {
         text-transform: uppercase;
         color: #0c5adb;
         margin: 0 0 25px;
         font-size: 16px;
         letter-spacing: 5px;
       }
-      h2{
+      h2 {
         font-size: 42px;
       }
     }
 
-    .team--photos{
+    .team--photos {
       display: flex;
 
-      .team--photo__container{
+      .team--photo__container {
         position: relative;
         width: 260px;
         height: 260px;
@@ -424,42 +425,198 @@ body {
         position: relative;
         overflow: hidden;
         transition: 0.5s;
-        &::after{
+        &::after {
           position: absolute;
-            content: '';
-            width: 260px;
-            height: 260px;
-            background-color: #0c5adb;
-            opacity: 0;
-            transition: 0.5s;
+          content: "";
+          width: 260px;
+          height: 260px;
+          background-color: #0c5adb;
+          opacity: 0;
+          transition: 0.5s;
         }
 
-        &:hover{
+        &:hover {
           transform: translateY(-20px);
 
-          &::after{
+          &::after {
             opacity: 0.8;
+          }
+
+          .member--description {
+            bottom: 50%;
+            opacity: 1;
           }
         }
 
-        img{
+        img {
           max-width: 100%;
           position: absolute;
           transform: scale(1.2);
         }
-      }
 
+        .member--description {
+          position: absolute;
+          color: white;
+          z-index: 3;
+          bottom: 40%;
+          left: 50%;
+          transform: translate(-50%, 50%);
+          width: 100%;
+          text-align: center;
+          opacity: 0;
+          transition: 0.4s;
+          transition-delay: 0.3s;
+
+          h2 {
+            font-size: 20px;
+            margin-bottom: 10px;
+          }
+
+          h3 {
+            font-size: 15px;
+            font-weight: lighter;
+          }
+        }
+      }
     }
   }
 }
 
+.contact {
+  width: 100%;
+  padding: 80px 0;
+  background: #0c5adb url("call-bg.png") top right/cover no-repeat scroll;
 
-.bg-grey{
-  background: #EFF2F7;
+  .contact--container {
+    margin: auto;
+    width: 1100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+
+    h2 {
+      font-weight: lighter;
+    }
+
+    h1 {
+      margin: 20px 0;
+      width: 47%;
+      font-size: 45px;
+      text-align: center;
+      font-weight: 700;
+    }
+
+    a {
+      margin-top: 20px;
+      color: #0c5adb;
+      text-decoration: none;
+      width: 214px;
+      height: 52px;
+      background-color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 5px;
+      text-transform: uppercase;
+      font-weight: 700;
+      font-size: 14px;
+      transition: 0.4s;
+
+      i {
+        margin-left: 10px;
+      }
+
+      &:hover {
+        background-color: #00247e;
+        color: white;
+      }
+    }
+  }
 }
 
+.footer {
+  width: 100%;
+  padding: 0 40px 0 0;
+  background: #111a3a url("call-bg.png") center/cover no-repeat scroll;
+  color: rgba(255, 255, 255, 0.8);
+  line-height: 1.5;
 
+  .footer--top {
+    display: flex;
+    width: 1100px;
+    margin: auto;
+    padding: 40px 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.349);
 
+    .footer--description {
+      width: calc(100% / 3);
+      padding-right: 20px;
+
+      .logo {
+        display: flex;
+        align-items: center;
+        margin-bottom: 20px;
+        img {
+          margin-right: 10px;
+        }
+      }
+    }
+
+    .footer--services {
+      width: calc(100% / 3);
+      h1 {
+        margin-bottom: 20px;
+      }
+
+      ul {
+        list-style: none;
+      }
+    }
+
+    .footer--adress {
+      width: calc(100% / 3);
+      h1 {
+        margin-bottom: 20px;
+      }
+
+      .adress,
+      .phone {
+        margin: 10px 0;
+      }
+
+      span {
+        color: white;
+        font-weight: bold;
+      }
+    }
+  }
+
+  .footer--bottom {
+    width: 1100px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0;
+
+    .TOS {
+      display: flex;
+      list-style: none;
+
+      li {
+        margin-right: 20px;
+
+        &:last-child {
+          margin-right: 0;
+        }
+      }
+    }
+  }
+}
+
+.bg-grey {
+  background: #eff2f7;
+}
 
 @keyframes rotating {
   from {
@@ -470,7 +627,6 @@ body {
   }
 }
 
-
 @keyframes crawl {
   from {
     left: 0;
@@ -480,14 +636,14 @@ body {
   }
 }
 
-@keyframes hover{
+@keyframes hover {
   0% {
     top: 3px;
   }
-  50%{
-    top:21px;
+  50% {
+    top: 21px;
   }
-  100%{
+  100% {
     top: 3px;
   }
 }
