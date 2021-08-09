@@ -513,26 +513,23 @@ body {
   overflow: hidden;
   -webkit-transition: 0.5s;
   transition: 0.5s;
-}
-
-.team .team--container .team--photos .team--photo__container::after {
-  position: absolute;
-  content: "";
-  width: 260px;
-  height: 260px;
-  background-color: #0c5adb;
-  opacity: 0;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
+  /* &::after {
+          position: absolute;
+          content: "";
+          width: 260px;
+          height: 260px;
+          background-color: #0c5adb;
+          opacity: 0;
+          transition: 0.5s;
+        } */
 }
 
 .team .team--container .team--photos .team--photo__container:hover {
   -webkit-transform: translateY(-20px);
           transform: translateY(-20px);
-}
-
-.team .team--container .team--photos .team--photo__container:hover::after {
-  opacity: 0.8;
+  /* &::after {
+            opacity: 0.8;
+          } */
 }
 
 .team .team--container .team--photos .team--photo__container:hover .member--description {
@@ -540,11 +537,20 @@ body {
   opacity: 1;
 }
 
+.team .team--container .team--photos .team--photo__container:hover img {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  -webkit-filter: blur(3px) brightness(60%);
+          filter: blur(3px) brightness(60%);
+}
+
 .team .team--container .team--photos .team--photo__container img {
   max-width: 100%;
   position: absolute;
   -webkit-transform: scale(1.2);
           transform: scale(1.2);
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 
 .team .team--container .team--photos .team--photo__container .member--description {

@@ -429,7 +429,7 @@ body {
         position: relative;
         overflow: hidden;
         transition: 0.5s;
-        &::after {
+        /* &::after {
           position: absolute;
           content: "";
           width: 260px;
@@ -437,18 +437,23 @@ body {
           background-color: #0c5adb;
           opacity: 0;
           transition: 0.5s;
-        }
+        } */
 
         &:hover {
           transform: translateY(-20px);
 
-          &::after {
+          /* &::after {
             opacity: 0.8;
-          }
+          } */
 
           .member--description {
             bottom: 50%;
             opacity: 1;
+          }
+
+          img{
+            transform: scale(1);
+            filter: blur(3px) brightness(60%);
           }
         }
 
@@ -456,6 +461,7 @@ body {
           max-width: 100%;
           position: absolute;
           transform: scale(1.2);
+          transition: 0.5s;
         }
 
         .member--description {
